@@ -1,0 +1,45 @@
+
+
+.nav {
+    flex-basis: 100%;
+    flex-grow: 1;
+    font-family: $special-font;
+    &__wrap {
+        height: 75px;
+        padding: 25px 0 15px 0;
+        background-color: $second-color;
+        margin-left: 250px;
+    }
+    &__list {
+        list-style: none;    
+        display: flex;    
+    }
+    &__item {
+        color: white;
+        margin: 0 40px;
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 4rem;
+        &:hover {
+            color: $main-color;
+            border-bottom: 1px solid $main-color;
+            cursor: pointer;
+        }
+        &:nth-last-child(1) {
+           margin-left: auto;
+        }
+    }
+    &__link {
+        text-decoration: none;    
+    }
+    &__btn {
+        animation: shakes 5s linear infinite; 
+        border: 1px solid $main-color; 
+        padding: 3px 10px;
+        color: $main-color; 
+        &:hover {
+            color: $second-color;
+            cursor: pointer;
+        }
+    }  
+}
